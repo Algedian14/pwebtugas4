@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Rangkaian Listrik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="circuit-box">
+            <h2>Rangkaian 1 (3 Lampu)</h2>
+            <div class="lamp-group">
+                <img id="r1-1" src="pic_bulboff.gif">
+                <img id="r1-2" src="pic_bulboff.gif">
+                <img id="r1-3" src="pic_bulboff.gif">
+            </div>
+            <div class="button-group">
+                <button onclick="stepR1()">Satu Per Satu</button>
+                <button onclick="toggleAllR1()">Semua Lampu</button>
+            </div>
+        </section>
+
+        <section class="circuit-box">
+            <h2>Rangkaian 2 (4 Lampu)</h2>
+            <div class="lamp-group">
+                <img id="r2-a" src="pic_bulboff.gif">
+                <img id="r2-b" src="pic_bulboff.gif">
+                <img id="r2-c" src="pic_bulboff.gif">
+                <img id="r2-d" src="pic_bulboff.gif">
+            </div>
+            <div class="button-group">
+                <button onclick="stepR2()">Satu Per Satu</button>
+                <button onclick="toggleAllR2()">Semua Lampu</button>
+                <button onclick="toggleGroupsR2()">Grup (A,B) & (C,D)</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
