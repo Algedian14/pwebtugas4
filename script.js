@@ -43,16 +43,15 @@ function toggleGroupsR2() {
     const lampA = document.getElementById('r2-a');
     
     if (lampA.src.includes(OFF)) {
-        // Nyalakan A,B dan matikan C,D
         document.getElementById('r2-a').src = ON;
         document.getElementById('r2-b').src = ON;
         document.getElementById('r2-c').src = OFF;
         document.getElementById('r2-d').src = OFF;
     } else {
-        // Matikan A,B dan nyalakan C,D
         document.getElementById('r2-a').src = OFF;
         document.getElementById('r2-b').src = OFF;
         document.getElementById('r2-c').src = ON;
         document.getElementById('r2-d').src = ON;
     }
+
 }
